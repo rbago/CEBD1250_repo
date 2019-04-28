@@ -1,0 +1,5 @@
+https://jenslaufer.com/data/science/use-cases-of-docker-in-the-data-science-process.html
+
+The article briefly explains on use cases for using Docker in a Data Science type of environment. In essance I believe Docker is a useful tool based on what we have recently learned. The ability to bring your script or code to any environment without having to worry about it working with specific settings sounds really useful.
+
+What this article does and why I thought it's a good intro to Docker especially in the Big Data field is how they apply it in the OSEMN process.

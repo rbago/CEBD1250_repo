@@ -1,0 +1,64 @@
+Create the tables course, with fields:
+	course_id of type integer,
+	course_name of type varchar2 having the size of 50
+	course_description of type varchar2 having the size of 100.
+
+mysql> USE employees;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> CREATE TABLE courses ( course_id INT PRIMARY KEY, course_name VARCHAR(50), course_description VARCHAR(100) );
+Query OK, 0 rows affected (0.14 sec)
+
+mysql> SHOW tables;
++----------------------+
+| Tables_in_employees  |
++----------------------+
+| courses              |
+| current_dept_emp     |
+| departments          |
+| dept_emp             |
+| dept_emp_latest_date |
+| dept_manager         |
+| employees            |
+| salaries             |
+| titles               |
++----------------------+
+9 rows in set (0.01 sec)
+
+
+Add the field, course_day of type varchar2 of 50.
+
+mysql> ALTER TABLE courses ADD course_day VARCHAR(50);
+Query OK, 0 rows affected (0.07 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESCRIBE courses;
++--------------------+--------------+------+-----+---------+-------+
+| Field              | Type         | Null | Key | Default | Extra |
++--------------------+--------------+------+-----+---------+-------+
+| course_id          | int(11)      | NO   | PRI | NULL    |       |
+| course_name        | varchar(50)  | YES  |     | NULL    |       |
+| course_description | varchar(100) | YES  |     | NULL    |       |
+| course_day         | varchar(50)  | YES  |     | NULL    |       |
++--------------------+--------------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+
+=============================
+
+Return all salaries that are between 40000 and 60000
+
+mysql> SELECT * FROM salaries WHERE salary>=40000 AND salary<=60000;
+
+Get all employees hired after 01-01-1995
+
+SELECT emp_no, first_name, last_name, hire_date FROM employees WHERE hire_date >= '1995-01-01';
+
+Get all salaries from 60000 to 90000
+
+SELECT emp_no, first_name, last_name, hire_date FROM employees WHERE hire_date >= '1995-01-01';
+
+Get all titles where title is equal to engineer
+
+SELECT * FROM titles WHERE title = 'engineer';
