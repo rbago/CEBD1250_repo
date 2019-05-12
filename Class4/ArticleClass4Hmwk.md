@@ -4,4 +4,4 @@ While searching for articles of Data Lake, I stumbled upon this one which opened
 
 ### The article 
 
-[Things to consider before building a serverless data warehouse] (https://serverless.com/blog/things-consider-building-serverless-data-warehouse/) by Ashan Fernando
+[Things to consider before building a serverless data warehouse](https://serverless.com/blog/things-consider-building-serverless-data-warehouse/) by Ashan Fernando
